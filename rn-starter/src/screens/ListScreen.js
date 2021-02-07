@@ -11,12 +11,15 @@ const ListScreen = () => {
     ];
     return (
         <FlatList
-            horizontal={true}
-            showsHorizontalScrollIndicator={false}
-            //keyExtractor={(friend) => friend.name}
+            //make the list horizontal
+            //horizontal={true}
+            //hide the horizontal scroll bar
+            //showsHorizontalScrollIndicator={false}
+            //keyExtractor={(friend) => friend.name} 
             data={friends} 
             renderItem={({item}) => {
-            return 
+            return
+                //print object: this will print Friend #1 - Age 22
                 <Text style={styles.textStyle}>
                 {item.name} - Age {item.age}
                 </Text>
