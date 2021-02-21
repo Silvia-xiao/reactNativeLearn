@@ -1,10 +1,9 @@
 import React from "react";
-import { Text, StyleSheet,View, Button } from "react-native";
+import { Text, StyleSheet,View, Button, TouchableOpacity } from "react-native";
 
 // Also we dont need to pass the whole props object.
 // we can just use navigation
 const HomeScreen = ({ navigation }) => {
-  console.log(props.navigation);
 
   return <View>
     <Text style={styles.text}>HomeScreen</Text>
@@ -21,6 +20,36 @@ const HomeScreen = ({ navigation }) => {
       {/* it will add the fade out effect */}
       <Text>Go to List Demo</Text>
     </TouchableOpacity>
+    <Button
+      onPress={() => navigation.navigate('Image')}
+      //if asign string value, we can just use double quotes
+      title="Go to Image screen"
+    />
+    <Button
+      onPress={() => navigation.navigate('Counter')}
+      //if asign string value, we can just use double quotes
+      title="Go to Counter Demo"
+    />
+    <Button
+      onPress={() => navigation.navigate('Color')}
+      //if asign string value, we can just use double quotes
+      title="Go to Color Demo"
+    />
+    <Button
+      onPress={() => navigation.navigate('Square')}
+      //if asign string value, we can just use double quotes
+      title="Go to Square Demo"
+    />
+    <Button
+      onPress={() => navigation.navigate('Text')}
+      //if asign string value, we can just use double quotes
+      title="Go to Text Demo"
+    />
+    <Button
+      onPress={() => navigation.navigate('Box')}
+      //if asign string value, we can just use double quotes
+      title="Go to Box Demo"
+    />
     </View>;
 };
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
+import { Text, StyleSheet, View } from 'react-native'
 
 const ComponentsScreen = () => {
     const hello = 'Hello';
@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default HomeScreen;
+export default ComponentsScreen;

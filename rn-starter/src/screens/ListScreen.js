@@ -9,7 +9,7 @@ const ListScreen = () => {
         { name: 'Friend #4', key: '4', age: 22 },
         { name: 'Friend #5', key: '5', age: 22 }
     ];
-    return (
+    return (<View>
         <FlatList
             //make the list horizontal
             //horizontal={true}
@@ -25,11 +25,11 @@ const ListScreen = () => {
                 </Text>
             }}
         />
-    );
+    </View>);
 }
 
-const styles = Styleheet.create({
-    textStyle: {
+const styles = StyleSheet.create({
+    textStyle:{
         marginVertical: 50
     }
 });
